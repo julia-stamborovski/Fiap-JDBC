@@ -15,27 +15,27 @@ public class UsuarioView {
 			UsuarioModel model = new UsuarioModel();
 			
 			//insert
-//			dao.insert(model);
-//			
-//			//update
+			dao.insert(model);
+			
+			//update
 			model.setIdUsuario(1);
 			model.setNmUsuario("Victor Hugo Arruda");
 			dao.update(model);
-//		
-//			//findAll
-//			List<UsuarioModel> usuarios = dao.findAll();
-//			for(UsuarioModel usuario : usuarios) {
-//				System.out.println(usuario.toString());
-//			}
-//
-//			//findById
-//			model.setIdUsuario(7);
-//			dao.findById(model.getIdUsuario());
+
+			//findAll
+			List<UsuarioModel> usuarios = dao.findAll();
+			for(UsuarioModel usuario : usuarios) {
+				System.out.println(usuario.toString());
+			}
+
+			//findById
+			model.setIdUsuario(7);
+			dao.findById(model.getIdUsuario());
 			
 			//delete
-//			model.setIdUsuario(1);
-//			dao.delete(model.getIdUsuario());
-//			
+			model.setIdUsuario(1);
+			dao.delete(model.getIdUsuario());
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
